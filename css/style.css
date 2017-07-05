@@ -1,3 +1,10 @@
+h1 {
+font-family: "hotel-solid", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 6em;
+}
+
 #board {
   margin-top: 10px;
 }
@@ -6,3 +13,12 @@
   border: 1px solid black;
   height: 150px;
 }
+#board{
+
+  text-align: center;
+  font-size: 5em;
+}
+
+#messageToPlayers{
+  color: blue;
+};
