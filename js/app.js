@@ -2,24 +2,45 @@
 $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
-  var ticTacToe = function () {
-//Players
-    var xPlayer = X;
-    var oPlayer = O;
-    //Player x goes first
-    CurrentPlayer: X;
-    /**
-		Switch between X player and O player.
-		*/
-		this.swapCurrentPlayer = function() {
-			if(CurrentPlayer == xPlayer) {
-				CurrentPlayer = oPlayer;
-			}
-			$("#messageToPlayers").text("Player "+CurrentPlayer+"'is up.");
-		}
-  // Winning patterns
-		waysToWin = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2]];
+    var turnCount=0;
+    $('#board').find('#1').on('click', function(){
+          if (turnCount % 2 === 0){
+            $(this).text('X');
 
-  };
+          } else {
+         //player 2's turn (O)
+            $(this).text('O');
 
-});
+          }
+        turnCount++;
+
+    });
+
+    $('#board').find('#2').on('click', function(){
+          if (turnCount % 2 === 0){
+            $(this).text('X');
+
+          } else {
+         //player 2's turn (O)
+            $(this).text('O');
+
+          }
+        turnCount++;
+
+    });
+
+    $('#board').find('#3').on('click', function(){
+          if (turnCount % 2 === 0){
+            $(this).text('X');
+
+          } else {
+         //player 2's turn (O)
+            $(this).text('O');
+
+          }
+        turnCount++;
+
+    });
+
+
+  });

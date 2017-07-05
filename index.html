@@ -16,7 +16,7 @@
      <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
-    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <!-- Typekit link-->
     <script src="https://use.typekit.net/mft2zdh.js"></script>
@@ -37,32 +37,31 @@
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
         <div class="col-md-6 col-md-offset-3" id="board">
-            <p id="messageToPlayers">
-
+            <p id="message">
+Game message
             </p>
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box" id ="sq0"></div>
-            <div class="col-md-4 box" id ="sq1"></div>
-            <div class="col-md-4 box" id ="sq2"></div>
+          <div class="row" id ="row1">
+            <div class="col-md-4 box" id ="1"></div>
+            <div class="col-md-4 box" id ="2"></div>
+            <div class="col-md-4 box" id ="3"></div>
           </div>
 
-          <div class="row">
-            <div class="col-md-4 box" id ="sq3"></div>
-            <div class="col-md-4 box" id ="sq4"></div>
-            <div class="col-md-4 box" id ="sq5"></div>
+          <div class="row" id ="row2">
+            <div class="col-md-4 box" id ="4"></div>
+            <div class="col-md-4 box" id ="5"></div>
+            <div class="col-md-4 box" id ="6"></div>
           </div>
 
-          <div class="row">
-            <div class="col-md-4 box" id ="sq6"></div>
-            <div class="col-md-4 box" id ="sq7"></div>
-            <div class="col-md-4 box" id ="sq8"></div>
+          <div class="row" id ="row3">
+            <div class="col-md-4 box" id ="7"></div>
+            <div class="col-md-4 box" id ="8"></div>
+            <div class="col-md-4 box" id ="9"></div>
           </div>
-
-
-
-
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Reset</button>
+          </div>
         </div>
       </div>
     </div>

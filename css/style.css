@@ -1,3 +1,14 @@
+.btn-default {
+    color: #333;
+    background-color: gray;
+    border-color: black;
+    font-family: "hotel-solid", sans-serif;
+}
+
+ p#message {
+   font-size: 18px;
+}
+
 h1 {
 font-family: "hotel-solid", sans-serif;
 font-style: normal;
@@ -5,20 +16,13 @@ font-weight: 400;
 font-size: 6em;
 }
 
-#board {
-  margin-top: 10px;
-}
-
 .box {
   border: 1px solid black;
   height: 150px;
 }
 #board{
-
   text-align: center;
+  margin-top: 10px;
   font-size: 5em;
+  border: 1px solid green;
 }
-
-#messageToPlayers{
-  color: blue;
-};
